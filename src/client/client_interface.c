@@ -1,5 +1,7 @@
 #include "raylib.h"
 
+#include "rtp.h"
+
 #include "client_jpeg.h"
 #include "client_button.h"
 
@@ -20,19 +22,12 @@ void control_teardown() {
 
 int main() {
 	/*
-	 button sector
+		BUTTON SECTOR
 	*/
-//	Rectangle button_setup, button_play, button_pause, button_teardown;
 	struct button_archive archive = {
 		.arr = NULL,
 		.size = 0,
 	};
-//	void (*control_command[])() = {
-//		control_setup,
-//		control_play,
-//		control_pause,
-//		control_teardown,
-//	};
 	struct control_info controls[] = {
 		{.command = control_setup, .name = "Setup"},
 		{.command = control_play, .name = "Play"},
