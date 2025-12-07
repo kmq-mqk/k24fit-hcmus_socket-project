@@ -1,6 +1,7 @@
 #include "raylib.h"
 
 #include "rtp.h"
+#include "jpeg_rtp.h"
 
 #include "client_jpeg.h"
 #include "client_button.h"
@@ -22,8 +23,9 @@ void control_teardown() {
 
 int main() {
 	/*
-		BUTTON SECTOR
-	*/
+	 * BUTTON SECTOR
+	 */
+
 	struct button_archive archive = {
 		.arr = NULL,
 		.size = 0,

@@ -9,7 +9,7 @@ LRAY =
 LDFLAGS = $(LRAY) -lGL -lm -lpthread -ldl -lrt -lX11
 
 RAY := thirdparty/raylib-5.5/src
-GENERAL_HEADERS := includes/
+GENERAL_HEADERS := includes
 
 SRC := src/**/*.c 
 
