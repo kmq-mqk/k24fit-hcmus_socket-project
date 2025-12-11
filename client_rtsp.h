@@ -6,7 +6,6 @@
 #include <string.h>
 #include <sys/socket.h>
 
-
 #define BUFFER_SIZE 2048
 #define RTSP_VER "RTSP/1.0"
 
