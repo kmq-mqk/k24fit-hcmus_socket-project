@@ -15,6 +15,7 @@ typedef enum{
     RTSP_STATE_READY, 
     RTSP_STATE_PLAYING
 } RTSP_State;
+
 typedef struct
 {
     int cmd_sock;
@@ -33,6 +34,7 @@ typedef struct
 int get_header_value(const char* buffer, const char* header_name, char* value);
 int validate_response(RTSP_Client* client, const char* resp_buf, const char* method_name);
 
+// rtsp_send_method
 void rtsp_send_options(RTSP_Client* client);
 void rtsp_send_setup(RTSP_Client* client);
 void rtsp_send_play(RTSP_Client* client);
