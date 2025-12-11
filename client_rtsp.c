@@ -66,6 +66,7 @@ int validate_response(RTSP_Client* client, const char* resp_buf, const char* met
     return 1;
 }
 
+// rtsp_send_method
 void rtsp_send_options(RTSP_Client* client)
 {
     client->cseq++;
